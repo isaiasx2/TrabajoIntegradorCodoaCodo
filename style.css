@@ -1,0 +1,34 @@
+html {
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+*, *::before, *::after{box-sizing: content-box;}
+.contenedor {
+background-image: url("./image/ba1.jpg");
+background-color: rgba(0, 0, 0, 0.6);
+background-blend-mode: soft-light;
+background-repeat: no-repeat;
+width: 100vw;
+height: 100vh;
+position: relative;
+}
+.tarjeta {
+    position: absolute;
+    bottom: 50%;
+    right: 20%;
+
+    
+}
+@media (max-width: 576px) {
+    .tarjeta {
+        display:contents;
+        flex-direction: column;
+        box-sizing:content-box;
+        padding: 10px;
+}
+}
+@media (max-width: 576px) { 
+    .navbar, .nav{
+        flex-direction:column;
+    }
+ }
