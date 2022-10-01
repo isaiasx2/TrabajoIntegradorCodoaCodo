@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Conviertete en orador</title>
+</head>
+<body>
+    
+    <div class="contenedor-formulario">
+        
+        <form action="formulario">
+            <div>
+                <div class="encabezado"><p class="fs-4">Conviertete en un <h2 class="fs-1 text-capitalize top-0">Orador</h2></p></div>
+                <p class="fs-2">Anotate como orador para una <a href="#">charla ignite</a>. Cuentanos de que quieres hablar!</p>
+            </div>
+            <div class="nombre">
+                <input type="text" name="nombre" placeholder="Nombre" class=" h-50 fs-3 ">
+                <input type="text" name="apellido" placeholder="Apellido" class=" h-50 fs-3 border-1">
+            </div>
+            <div class="mensaje">
+                <textarea name="mensaje"  cols="60" rows="5" placeholder="¿Sobre que queres hablar?" class="w-100 fs-3"></textarea>
+            </div>
+            <span class="fs-4 opacity-50 mb-4">Recuera poner un titulo para tu charla</span>
+            <div class="boton-enviar">
+                <input type="button" value="Enviar" id="boton" class="w-100 btn btn-success fs-3">
+            </div>
+            
+            
+        </form>
+    </div>
+
+
+    <footer class="pie">
+        <a href="">Preguntas frecuentes</a>
+        <a href="">Contacto</a>
+        <a href="">Prensa</a>
+        <a href="">Conferencias</a>
+        <a href="">Terminos y condiciones</a>
+        <a href="">Privacidad</a>
+        <a href="">Estudiantes</a>
+    </footer>
+
+    
+</body>
+</html>
