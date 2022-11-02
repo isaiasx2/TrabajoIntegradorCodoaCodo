@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="./script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous" defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="./comprarTickets.css">
+    
+    <title>comprarEntrada</title>
+</head>
+<body>
+    
+  <div>
+    <nav class="navbar bg-dark m-0">
+        <a href="./index.html" class="navbar-brand text-light fs-2">
+        <img src="./image/codoacodo.png" alt="codoacodo" height="100px" width="150" >
+                Conf Bs As
+        </a>
+      <ul class="nav justify-content-end fs-5">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="./index.html">La conferencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./losOradores.html">Los oradores</a>
+          </li>
+          <li class="nav-item ">
+             <a class="nav-link text-light" href="./elLugarYFecha.html">El lugar y fecha</a>
+          </li>
+          <li class="nav-item ">
+              <a class="nav-link text-light" href="/convierteteEnOrador.html">Conviertete en orador</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-light btn  btn-outline-success" href="./comprarTickets.html">Comprar tickets</a>
+          </li>
+      </ul>
+            
+    </nav>
+  </div>
+  <div class="contenedor">
+    <div class="descuento">
+      <div id="descuento-80 descuentos" class="descuento-estudiante ">
+       
+        <p class="fs-1 fw-bolder">Estudiante</p>
+        <span class="fs-3 fw-bold">Tiene descuento</span>
+        <p class="fs-3">80%</p>
+        <span class="fs-3 opacity-25">*presentar documentacion</span>
+        
+      </div>
+      <div id="descuento-50 descuentos" class="descuento-trainee">
+        
+        <p class="fs-1 fw-bolder">Trainee</p>
+        <span class="fs-3 fw-bold">Tiene descuento</span>
+        <p class="fs-3">50%</p>
+        <span class="fs-3 opacity-25">*presentar documentacion</span>
+        
+      </div>
+      
+      <div id="descuento-15" class="descuento-junior descuentos">
+        
+          <p class="fs-1 fw-bolder">Junior</p>
+          <span class="fs-3 fw-bold">Tiene descuento</span>
+          <p class="fs-3">15%</p>
+          <span class="fs-3 opacity-25">*presentar documentacion</span>
+        
+      </div>
+        
+    
+    </div>
+    
+    <div id="formulario-compra">
+      <p class="fs-5">Venta</p>
+      <h2 class="fs-1">Valor de ticket: 200$</h2>
+      <form class="formulario-compra">
+        <div class="nombre-apellido-correo">
+            <input type="text" placeholder="Nombre" id="nombre" class="nombre form-control">
+            <input type="text" placeholder="Apellido" id="apellido" class="apellido form-control">
+            <input type="email" placeholder="Correo" id="correo" class="correo form-control">
+        </div>
+        <div class="cantidad-categoria">
+          <input type="text" placeholder="Cantidad" id="cantidad" class="mt-1 form-control-sm">
+          <select  id="categoria" class="mt-1 form-select-sm">
+            <option value="0" selected>Sin categoria</option>
+            <option value="1">Estudiantes</option>
+            <option value="2">Trainee</option>
+            <option value="3">Junior</option>
+          </select>
+          </div>
+      </form>
+      <div class="total-botones">
+        <button id="borrar" class="borrar btn btn-outline-warning">Borrar</button>
+        <button id="calcularTotal" class="total btn btn-outline-success">Total</button>
+      </div>
+        <hr>
+        <p id="mostrarTotal" class="fs-3 p-2 bg-success text-bg-dark">El total a pagar es:   </p>
+    </div>
+  </div>
+    
+</body>
+
+</html>
